@@ -5,21 +5,22 @@
   "dependencies": {
     "bs-fetch": "github:reasonml-community/bs-fetch",
     "bs-json": "^0.2.3",
-    "bs-moment": "^0.1.4",
-    "moment": "^2.18.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "reason-scripts": "0.6.9"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "prepare": "npm link bs-platform"
+    "start": "bsb -make-world -w",
+    "dev": "webpack-dev-server -w",
+    "clean": "bsb -clean-world"
   },
   "devDependencies": {
     "bs-jest": "^0.1.0",
-    "reason-react": "^0.2.4"
+    "bs-platform": "^2.0.0",
+    "css-loader": "^0.28.7",
+    "reason-react": "^0.2.4",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
   }
 }
